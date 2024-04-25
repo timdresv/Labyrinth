@@ -2,6 +2,8 @@ import pygame
 
 
 class Player(pygame.sprite.Sprite):
+    # Класс реализует перемещение игрока по лабиринту
+
     def __init__(self, screen, scale, offset_x, offset_y, begin_x, begin_y):
         pygame.sprite.Sprite.__init__(self)
 

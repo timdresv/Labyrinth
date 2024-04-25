@@ -2,6 +2,7 @@ import pygame
 
 
 class Labyrinth(pygame.sprite.Sprite):
+     # Класс для представления лабиринта
     def __init__(self, generator):
         pygame.sprite.Sprite.__init__(self)
         self.generator = generator
@@ -24,6 +25,7 @@ class Labyrinth(pygame.sprite.Sprite):
                          (offset_x + self.generator.width * scale, offset_y + (self.generator.end_y + 1) * scale),
                          (offset_x + self.generator.width * scale, offset_y + self.generator.height * scale),
                          width=walls_width)
+
         for x in range(len(self.generator.matrix)):
             for y in range(len(self.generator.matrix[x])):
                 if self.generator.matrix[x][y][0]:

@@ -7,6 +7,8 @@ sys.setrecursionlimit(20000)
 
 
 class GeneratorMST(Generator):
+    # Класс генерации лабиринта с помощью алгоритма MST
+
     def update(self):
         Generator.update(self)
 

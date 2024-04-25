@@ -7,6 +7,8 @@ sys.setrecursionlimit(20000)
 
 
 class GeneratorDFS(Generator):
+    # Класс генерации лабиринта с помощью алгоритма DFS
+
     def update(self):
         Generator.update(self)
 

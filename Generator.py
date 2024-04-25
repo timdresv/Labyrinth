@@ -1,4 +1,6 @@
 class Generator:
+    # Класс генерации лабиринта
+
     def update(self):
         self.matrix = [[[1] * 4 for y in range(self.height)] for x in range(self.width)]
         # first value - is there a wall on the top
