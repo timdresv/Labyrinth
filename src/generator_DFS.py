@@ -1,7 +1,7 @@
 import random
 import sys
 
-from Generator import Generator
+from src.generator import Generator
 
 sys.setrecursionlimit(20000)
 
